@@ -1,3 +1,9 @@
+# 0.4.3 (samrum fork) — experimental
+
+- Signed with samrum's mod key (author uuid 6e3acbe6-b49b-8948-b938-4e822bf3706d) instead of Isaac Wisdom's. HMG-API won't install official releases over this build, or this build over an official one, without uninstalling first.
+- Ioniq 5 consumption values from the Leafia trip tuning (US Ioniq 5, 2026-11-08/09 drives): reference values x0.6 for the town and mid-speed slots, x0.9 for the three highway slots (8-10, 75 mph). Capacity stays 77.4 kWh (pinned in `VehicleSource`). EV6 profile unchanged.
+- Build notes for Linux: JDK 17 (`--release 7` needs a JDK before 20), a `--java-home` whose `include/` also holds `linux/jni_md.h`, and an android.jar without `org/json` (Robolectric android-all 4.4 with `org/json/*` removed works).
+
 # 0.4.3 — experimental
 
 - Send vehicle status every ten seconds instead of every five seconds.

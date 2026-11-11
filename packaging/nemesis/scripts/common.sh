@@ -6,7 +6,7 @@ DATA=/data/hmgapi
 BACKUP=/data/nemesis/backup/carplay.ev-routing
 LOGS=/data/nemesis/logs/carplay.ev-routing
 STAGE=/data/local/tmp/nemesis/stage/carplay.ev-routing
-UUID=b45fb2d9-e6e8-83a2-bce9-cd5c40d2232d
+UUID=6e3acbe6-b49b-8948-b938-4e822bf3706d
 USB=
 USB_SOURCE=
 

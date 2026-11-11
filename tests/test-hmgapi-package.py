@@ -6,7 +6,7 @@ import argparse,json,os,subprocess,tempfile,zipfile
 R=Path(__file__).resolve().parents[1]
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--java',default='java');a=p.parse_args()
- uuid='b45fb2d9-e6e8-83a2-bce9-cd5c40d2232d';cp=str(R/'out/hmg-classes')
+ uuid='6e3acbe6-b49b-8948-b938-4e822bf3706d';cp=str(R/'out/hmg-classes')
  version=json.loads((R/'release.json').read_text())['version']
  for model in ['NEEV23','CVEV','NEEV']:
   with tempfile.TemporaryDirectory() as tmp:
