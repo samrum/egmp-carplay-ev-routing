@@ -14,7 +14,7 @@ public final class ReleasePlanHost {
    if(!plan.refused.isEmpty())throw new AssertionError(plan.refused);
    if(!plan.order.equals(Arrays.asList("wireless-carplay-aa","egmp-carplay-ev-routing")))throw new AssertionError(plan.order);
    for(String id:new String[]{"iap2.service.on_bind","iap2.service.native_handle","iap2.service.native_lock","iap2.init_info.use_vehicle_information","iap2.init_info.use_vehicle_status"})if(!points.containsKey(id))throw new AssertionError(id);
-   Signing.Result signed=Signing.verify(out.resolve("mod").toFile(),"b45fb2d9-e6e8-83a2-bce9-cd5c40d2232d");if(!signed.ok)throw new AssertionError(signed.error);
+   Signing.Result signed=Signing.verify(out.resolve("mod").toFile(),"6e3acbe6-b49b-8948-b938-4e822bf3706d");if(!signed.ok)throw new AssertionError(signed.error);
    System.out.println("PASS official beta6 "+car[0]+" map, shared wireless/EV hook plan and signed profile");
   }
  }
